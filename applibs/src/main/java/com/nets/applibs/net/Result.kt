@@ -6,6 +6,7 @@ class Result<D> : Serializable {
     var msg: String? = null
     var code = 0
     var data:D? = null
+    var isShowStat=false
 
     constructor() {}
     constructor(msg: String?, code: Int, data: D) {

@@ -9,7 +9,7 @@ import com.nets.applibs.fragment.ISupport.ISupportFragment
 class VisibleDelegate(private val mSupportF: ISupportFragment) {
     // SupportVisible相关
     var isSupportVisible = false
-        private set
+         set
     private var mNeedDispatch = true
     private var mInvisibleWhenLeave = false
     private var mIsFirstVisible = true
