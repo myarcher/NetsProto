@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="黑龙江"
+        android:id="@+id/tv_tag_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_14px"
+        android:layout_marginTop="@dimen/dimen_12px"
+        android:background="@drawable/default_flow_tag_bg_rect_round_gray"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/dimen_15px"
+        android:paddingVertical="@dimen/dimen_7px"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dimen_17px" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">appLibs</string>
+    <string name="loading">加载中...</string>
+    <string name="msg_no_camera">不能启动拍照</string>
+</resources>

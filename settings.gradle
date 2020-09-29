@@ -1,0 +1,3 @@
+include ':applibs'
+include ':app'
+rootProject.name = "Feather"

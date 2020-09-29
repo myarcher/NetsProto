@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialRatingBar">
+        <attr name="mrb_progressTint" format="color|reference" />
+        <attr name="mrb_progressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_secondaryProgressTint" format="color|reference" />
+        <attr name="mrb_secondaryProgressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_progressBackgroundTint" format="color|reference" />
+        <attr name="mrb_progressBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_indeterminateTint" format="color|reference" />
+        <attr name="mrb_indeterminateTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_fillBackgroundStars" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SpinView">
+        <attr name="res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowTagLayout">
+        <!--选择模式，默认不可选-->
+        <attr name="ftl_check_mode" format="enum">
+            <!--不可选择-->
+            <enum name="none" value="0" />
+            <!--单选-->
+            <enum name="single" value="1" />
+            <!--多选-->
+            <enum name="multi" value="2" />
+            <!--只是展示-->
+            <enum name="display" value="3" />
+        </attr>
+        <attr name="ftl_entries" format="reference" />
+        <attr name="ftl_selecteds" format="reference" />
+    </declare-styleable>
+        <declare-styleable name="CircleImageView">
+            <attr name="civ_border_width" format="dimension" />
+            <attr name="civ_border_color" format="color" />
+            <attr name="civ_border_overlay" format="boolean" />
+            <attr name="civ_circle_background_color" format="color" />
+        </declare-styleable>
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_shape" format="enum">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="oval" value="3" />
+        </attr>
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="siv_round_radius" format="dimension" />
+        <attr name="siv_round_radius_leftTop" format="dimension" />
+        <attr name="siv_round_radius_leftBottom" format="dimension" />
+        <attr name="siv_round_radius_rightTop" format="dimension" />
+        <attr name="siv_round_radius_rightBottom" format="dimension" />
+        <attr name="siv_border_size" format="dimension" />
+        <attr name="siv_border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="NinePhotoLayout">
+        <!-- 是否显示加号，默认值为 true -->
+        <attr name="plusEnable" format="boolean"/>
+        <!-- 是否可拖拽排序，默认值为 true -->
+        <attr name="sortable" format="boolean"/>
+        <!-- 删除按钮图片，默认值为 R.mipmap.bga_pp_ic_delete -->
+        <attr name="deleteDrawable" format="reference"/>
+        <!-- 可选择图片的总张数,默认值为 9 -->
+        <attr name="maxItemCount" format="integer"/>
+        <!-- 列数,默认值为 3 -->
+        <attr name="itemSpanCount" format="integer"/>
+        <!-- 添加按钮图片，默认值为 R.mipmap.bga_pp_ic_plus -->
+        <attr name="plusDrawable" format="reference"/>
+
+        <!-- Item 间的水平和垂直间距，默认值为 4dp -->
+        <attr name="itemWhiteSpacing" format="dimension|reference"/>
+        <!-- 出去九宫格部分的空白区域的尺寸，默认值为 100dp -->
+        <attr name="otherWhiteSpacing" format="dimension|reference"/>
+        <!-- 占位图资源，默认值为 R.mipmap.bga_pp_ic_holder_light -->
+        <attr name="placeholderDrawable" format="reference"/>
+        <!-- 是否可编辑，默认值为 true -->
+        <attr name="editable" format="boolean"/>
+        <!-- item 的尺寸，大于 0dp 时优先级高于 bga_snpl_otherWhiteSpacing，默认值为 0dp -->
+        <attr name="itemWidth" format="dimension|reference"/>
+    </declare-styleable>
+</resources>
