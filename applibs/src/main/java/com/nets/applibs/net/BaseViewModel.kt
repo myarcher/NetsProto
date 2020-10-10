@@ -53,7 +53,10 @@ open class BaseViewModel : AndroidViewModel, ApiRespListener {
         }
         return liveDatas!!
     }
-
+   fun <T>get(key: String): MutableLiveData<T> {
+       return  getLiveData().get<T>(key)
+    }
+    
     fun getErrData(): MutableLiveData<ResponseData> {
         if (errData == null) {
             errData = MutableLiveData()
