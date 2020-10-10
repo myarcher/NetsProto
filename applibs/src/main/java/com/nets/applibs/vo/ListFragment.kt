@@ -40,9 +40,7 @@ abstract class ListFragment<T> : CustomFragment() {
         return BaseRvAdapter<T>(build,baselist_rv)
     }
 
-    override fun getContentId(): Int {
-        return R.layout.baselist
-    }
+    override val contentId: Int = R.layout.baselist
 
     open fun getItemLayout(): Int {
         return 0

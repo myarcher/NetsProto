@@ -44,6 +44,12 @@ abstract class CustomFragment : BaseFragment(), Observer<ResponseData>,
         setCustomset()
     }
 
+    override val contentId:Int=0
+
+    override val pageType: Int=0
+    override val isShowBnt: Boolean=false
+    override val callBackData: Any?=null
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -62,7 +68,7 @@ abstract class CustomFragment : BaseFragment(), Observer<ResponseData>,
         var showLayoutId = if (isNeedRefload()) {
             layoutId
         } else {
-            getContentId()
+            contentId
         }
         if (showLayoutId > 0) {
             mView = inflater.inflate(showLayoutId, container, false)
@@ -114,7 +120,7 @@ abstract class CustomFragment : BaseFragment(), Observer<ResponseData>,
     override fun initView() {
     }
 
-    fun resetRefrLoad() {
+    fun resetRefreshLoad() {
         refreshLoad?.resetRefreshLoad()
     }
 

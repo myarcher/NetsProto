@@ -49,7 +49,7 @@ class RefreshLoadLayout : SmartRefreshLayout, OnRefreshListener, OnLoadMoreListe
 
     fun setLayoutListener(layoutListener: RefreshLoadListener?) {
         this.layoutListener = layoutListener
-        contentLayoutId = layoutListener?.getContentId()?: 0
+        contentLayoutId = layoutListener?.contentId?: 0
         initContentView()
     }
 
@@ -161,6 +161,6 @@ class RefreshLoadLayout : SmartRefreshLayout, OnRefreshListener, OnLoadMoreListe
 }
 
 interface RefreshLoadListener {
-    fun getContentId(): Int
+    val contentId:Int
     fun onRefreshLoad(pageIndex: Int, pagerCount: Int)
 }
